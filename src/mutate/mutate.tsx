@@ -6,8 +6,6 @@ import { toast } from "react-toastify";
 
 export const useMutateProducts = () => {
   const [posts, setPosts] = useState<any[]>([]);
-  console.log('bababa');
-  
   const mutation = useMutation(getHomePost,
     {
       onSuccess: (data: any) => {

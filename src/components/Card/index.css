@@ -1,0 +1,14 @@
+.card-box__asets {
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.card-box:hover 
+{
+  border-top: 1px solid #46A358;
+}
+
+.card-box:hover .card-box__asets {
+  display: flex;
+}

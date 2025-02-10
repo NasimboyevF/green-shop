@@ -4,6 +4,8 @@ import MySwiper from "../components/Swiper";
 import Home from "../pages/home";
 import About from "../pages/about";
 import { ReactNode } from "react";
+import Bascets from "../pages/bascets";
+import Checkout from "../pages/checkout";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
@@ -24,6 +26,8 @@ export const Router = () => {
     <Routes>
       <Route path="/" element={<Layout><Home /></Layout>} />
       <Route path="/about/:id" element={<Layout><About /></Layout>} />
+      <Route path="/bascets" element={<Layout><Bascets/></Layout>} />
+      <Route path="/checkout" element={<Layout><Checkout/> </Layout>}/>
     </Routes>
   );
 };

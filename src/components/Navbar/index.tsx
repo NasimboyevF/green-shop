@@ -41,7 +41,9 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-9">
           <img className="cursor-pointer" src={Search} alt="" />
-          <img className="cursor-pointer" src={Cart} alt="" />
+          <NavLink to={"/bascets"}>
+            <img className="cursor-pointer" src={Cart} alt="" />
+          </NavLink>
           <div>
             <button className="bg-[#46A358]  cursor-pointer  w-[100px] h-9 py-2 rounded-md flex items-center gap-2 text-base font-normal leading-5 text-left text-[#FFFFFF] px-4">
               <img src={Logout} alt="" />

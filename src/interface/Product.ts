@@ -10,3 +10,10 @@ export interface Product {
   __v: number;
   rank: number;
 }
+
+export type ProductQuantity = Product & {
+  quantity: [number,number];
+};
+
+
+

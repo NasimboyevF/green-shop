@@ -68,7 +68,7 @@ const Categoris = ({
           <input
             type="range"
             min="0"
-            max="100"
+            max="4000"
             step="1"
             onChange={(e) => {
               setCategoriesPrice(e.target.value);

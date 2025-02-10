@@ -1,7 +1,7 @@
 import React from "react";
 import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import type { Swiper as SwiperType } from "swiper";
+// import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
@@ -16,9 +16,9 @@ const MySwiper: React.FC = () => {
           spaceBetween={0}
           slidesPerView={1}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 5000 }}
-          onSwiper={(swiper: SwiperType) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
+          autoplay={{ delay: 3000    }}
+          // onSwiper={(swiper: SwiperType) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
             <div>
